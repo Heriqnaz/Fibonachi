@@ -1,0 +1,32 @@
+<html>
+    <hand>
+
+    </hand>
+    <body>
+        <p>Fibonacci</p>
+        <input id="1" type="text">
+        <button onclick="fib()">Fibonacci</button>
+        <p>Fibonacci sequence</p>
+        <input id="2" type="text" >
+        <input id="3" type="text" >
+        <script>
+        
+        function fib(){
+            var arr = [];
+            arr[0] = 1;
+            arr[1] =1;
+            var x = document.getElementById('1').value;
+            for(var i = 2; i<=x; i++){
+                arr[i] = arr[i-1] + arr[i-2];
+                
+            }
+            document.getElementById('2').value = arr;
+            document.getElementById('3').value = arr[x];
+              
+
+
+        }
+        
+        </script>
+    </body>
+</html>
